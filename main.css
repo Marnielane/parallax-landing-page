@@ -66,6 +66,7 @@ ul {
     padding: 0 20px;
 }
 
+/*Section Top*/
 .section-top {
     min-height: 500px;
     background: url('./img/bg1.png') no-repeat center center/cover;
@@ -80,9 +81,10 @@ ul {
     position: absolute;
     top:100px;
     right: 70px;
-    width: 50%;
+    width: 55%;
 }
 
+/*Section Stream*/
 .sedtion-stream {
     min-height: 700px;
     background: url(./img/bg2.png) no-repeat center center/cover;
@@ -106,14 +108,14 @@ ul {
     right: 70px;
 }
 
-.section-stream .content > div, 
-.section-grid > div {
+.section-stream .content > div, .section-grid > div {
     background: rgba(255, 255, 255, 0.1);
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 10px;
 }
 
+/*Section Grid*/
 .section-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -130,6 +132,7 @@ ul {
     padding-left: 2px;
 }
 
+/*Footer*/
 .footer {
     border-top: var(--text-color) 1px solid;
     padding: 30px;
@@ -141,4 +144,46 @@ ul {
     align-items: center;
     justify-content: space-around;
     text-align: center;
+}
+
+/*Mobile Sizing*/
+@media(max-width: 700px) {
+    .section-top .content,
+    .section-stream .play,
+    .section-stream .content {
+        position: static;
+        width: 100%;
+    }
+
+    .section-top {
+        min-height: 200px;
+        padding-top: 20px;
+    }
+
+    .section-top .content {
+        text-align: center;
+    }
+
+    .section-top .content h1 {
+        font-size: 45px;
+    }
+
+    .section-stream {
+        min-height: 400px;
+    }
+
+    .section-stream .play {
+        width: 50%;
+        display: block;
+        margin: 30px auto;
+    }
+
+    .section-grid {
+        display: block;
+        margin-top: 0;
+    }
+
+    .footer ul {
+        display: block;
+    }
 }
