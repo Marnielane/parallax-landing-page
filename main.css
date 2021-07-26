@@ -83,6 +83,12 @@ ul {
     width: 50%;
 }
 
+.sedtion-stream {
+    min-height: 700px;
+    background: url(./img/bg2.png);
+    
+}
+
 
 
 
